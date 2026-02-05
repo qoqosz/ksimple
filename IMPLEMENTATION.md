@@ -59,10 +59,10 @@ The REPL is primarily defined by `run_repl` and `process_line`. It mimics the re
    - Whitespace-only input ends up as an empty token list and is ignored.
 
 2. **Handle backslash commands**
-   - If the line is exactly two characters and starts with `\\`:
-     - `\\\\` exits the REPL (`false`)
-     - `\\w` prints the workspace byte count
-     - `\\v` prints global variables with refcounts and vector lengths
+   - If the line is exactly two characters and starts with `\`:
+     - `\\` exits the REPL (`false`)
+     - `\w` prints the workspace byte count
+     - `\v` prints global variables with refcounts and vector lengths
 
 3. **Handle comments**
    - If the line starts with `/`, it is ignored and the REPL continues.
